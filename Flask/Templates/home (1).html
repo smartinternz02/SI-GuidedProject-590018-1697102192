@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Vehicle Damage Assessment</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <style>
+        /* Reset some default styles to ensure consistent rendering */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style the anchor (link) on hover */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Add some spacing to the footer text */
+footer p {
+    margin: 10px 0;
+}
+.head{
+    display: flex;
+    padding-left: 500px;
+    
+}
+.forms{
+    padding: 10px;
+    
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to AI Vehicle Damage Assessment</h1>
+        
+            <div class="head">
+                
+                <form class="forms" action="{{ url_for('login')}}" method="post">
+                    <button style="background-color: #ff004f;" class="button"  href="templates/login.html">
+                        Login
+                    </button>
+                    
+                </form>
+                <form class="forms" action="{{ url_for('registration')}}" method="post">
+                    <button style="background-color: #ff004f;" class="button"  href="templates/register.html">
+                        Register
+                    </button>
+                    
+                </form>
+                <form class="forms" action="{{ url_for('prediction')}}" method="post">
+                    <button style="background-color: #ff004f;" class="button"  href="templates/predict.html">
+                        Predict
+                    </button>
+                    
+                </form>
+            </div>
+                
+                
+            
+        
+    </header>
+    <section>
+        <h2>About the Project</h2>
+        <p>Learn about the AI-powered vehicle damage assessment and cost estimation project.</p>
+    </section>
+    <footer>
+        <p>&copy; 2023 AI Vehicle Damage Assessment</p>
+    </footer>
+</body>
+</html>
